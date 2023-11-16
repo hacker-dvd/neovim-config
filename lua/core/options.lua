@@ -10,5 +10,11 @@ opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
 
-# 禁止自动换行
+-- 禁止自动换行
 opt.wrap = false
+
+-- 光标行
+opt.cursorline = false
+
+opt.clipboard:append("unnamedplus")
+
