@@ -14,7 +14,7 @@ opt.autoindent = true
 opt.wrap = false
 
 -- 光标行
-opt.cursorline = false
+opt.cursorline = false 
 
 opt.clipboard:append("unnamedplus")
 
