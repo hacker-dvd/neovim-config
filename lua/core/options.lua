@@ -1,5 +1,6 @@
 local opt = vim.opt
-
+local buf = vim.b
+local glo = vim.g
 -- 行号
 opt.relativenumber = true
 opt.number = true
@@ -35,3 +36,4 @@ opt.smartcase = true
 opt.termguicolors = true
 opt.signcolumn = "yes"
 
+buf.fileenconding = "utf-8"

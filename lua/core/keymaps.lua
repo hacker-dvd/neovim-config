@@ -17,3 +17,4 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 -- nvim-tree
 keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>")
 
+keymap.set("n", "<A-Tab>", "<cmd>bNext<CR>")
