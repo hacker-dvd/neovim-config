@@ -15,11 +15,12 @@ opt.autoindent = true
 opt.wrap = false
 
 -- 光标行
-opt.cursorline = false 
+opt.cursorline = true 
 
 opt.clipboard:append("unnamedplus")
 
 -- 系统剪切板支持
+-- need xclip
 opt.clipboard:append("unnamedplus")
 
 -- 默认新窗口右和下
