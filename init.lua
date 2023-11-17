@@ -21,4 +21,3 @@ require("lazy").setup("plugins")
 -- 主题设置
 vim.cmd[[colorscheme tokyonight]]
 
-
