@@ -4,12 +4,16 @@ return {
   'nvim-telescope/telescope.nvim', tag = '0.1.4',
   dependencies = {
     'nvim-lua/plenary.nvim',
+    'nvim-lua/popup.nvim',
+    -- 'nvim-telescope/telescope-media-files.nvim',
     { 
       'nvim-telescope/telescope-fzf-native.nvim', 
       build = 'make' 
     }
   },
   config = function()
+    -- require('telescope').load_extension('media_files')
+
     require('telescope').setup {
       extensions = {
         fzf = {
@@ -18,9 +22,17 @@ return {
           override_file_sorter = true,     -- override the file sorter
           case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
           -- the default case_mode is "smart_case"
-        }
+        },
+        -- media_files = {
+        --   -- filetypes whitelist
+        --   -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
+        --   filetypes = {"png", "webp", "jpg", "jpeg"},
+        --   -- find command (defaults to `fd`)
+        --   -- find_cmd = "rg"
+        -- }
       }
     }
+
     require('telescope').load_extension('fzf')
 
     local builtin = require('telescope.builtin')
